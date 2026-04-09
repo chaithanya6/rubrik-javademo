@@ -42,7 +42,7 @@ jobs:
  
     - name: Deploy to Kubernetes
       run: |
-        kubectl apply -f deployment.yaml
-        kubectl apply -f service.yaml
-        kubectl apply -f ingress.yaml
+        microk8s kubectl apply -f deployment.yaml
+        microk8s kubectl apply -f service.yaml
+        microk8s kubectl apply -f ingress.yaml  
  
