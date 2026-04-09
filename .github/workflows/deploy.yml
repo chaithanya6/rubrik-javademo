@@ -42,7 +42,7 @@ jobs:
  
     - name: Deploy to Kubernetes
       run: |
-        microk8s kubectl apply -f deployment.yaml --validat=false
-        microk8s kubectl apply -f service.yaml --validate=false
-        microk8s kubectl apply -f ingress.yaml  --validate=false
+        kubectl apply -f deployment.yaml --validate=false
+        kubectl apply -f service.yaml --validate=false
+        kubectl apply -f ingress.yaml  --validate=false
  
